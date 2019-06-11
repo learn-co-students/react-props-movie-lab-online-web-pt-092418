@@ -15,13 +15,12 @@ export default class CardBack extends Component {
     // debugger
     let value
     if (this.props.IMDBRating === null) {
-      debugger
+      // debugger
       return value = <h4>No Rating Found</h4>;
 
     } else {
       return value =
-        <img src={imgMapper[this.props.IMDBRating]} alt="{this.props.title}" />
-      ;
+        <img src={imgMapper[this.props.IMDBRating]} alt={this.props.title} />;
     }
   }
 
